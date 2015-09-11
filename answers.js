@@ -85,3 +85,10 @@ function repeatString (string, number) {
 repeatString("Good morning!", 3); // this will return Good morning!Good morning!Good morning!
 repeatString("hello", 5); // this will return "hellohellohellohellohello"
 repeatString("hello ", 5); // this will return it with spaces "hello hello hello hello hello " 
+
+// reverse string
+
+function reverseString(s) {
+  return s.split('').reverse().join('');
+}
+reverseString("The quick brown fox"); // this will return "xof nworb kciuq ehT"
