@@ -93,3 +93,21 @@ function reverseString(s) {
 }
 reverseString("The quick brown fox"); // this will return "xof nworb kciuq ehT"
 reverseString(""); // returns an empty space ""
+
+// factorials
+
+function factorialNum (num)
+{
+    if (num < 0) { 
+        return "This number cannot be factorialized";
+    }
+    else if (num == 0) {
+        return 1;
+    }
+    else {
+        return (num * factorialNum(num - 1));
+    }
+}
+factorialNum(4); // this will return 24
+factorialNum(-10); // this returns "This number cannot be factorialized"
+
