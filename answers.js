@@ -13,15 +13,32 @@ function lastCharacter (string) {
     return string[string.length-1]
 }
 
+/// This function takes a string and returns the last character of the string
+
 lastCharacter("Pamplemousse"); //this will return the last letter "e"
 
 lastCharacter("I am learning about functions"); // this will return "s"
 
 lastCharacter(" "); // this will return an empty string " "
 
+///  this function takes a string and a number, and returns the character at the position represented by the number
+
 function whereIsTheNumber (string, number) {
     return string[number];
 }
+
 whereIsTheNumber("Hi", 1); // this will return "i"
 whereIsTheNumber("Sunshine", 3); // this will return "s"
 whereIsTheNumber(" ", 0); // this will return a blank space " "
+
+/// this function adds two numbers together
+
+function addingTwoNumbers (num1, num2) {
+  return num1 + num2;   
+}
+
+addingTwoNumber (1, 2); /// this returns 3
+addingTwoNumbers (12, 1.5); /// this returns 13.5
+addingTwoNumbers ("pickles", 75); /// this will return "pickles75"
+
+
