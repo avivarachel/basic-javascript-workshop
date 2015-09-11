@@ -76,3 +76,12 @@ numNumString(5, 6, "mult"); // this will return 30
 numNumString(5, 6, "div"); // this will return 0.8333333333333334
 numNumString(1, 2, "koala"); // this will return 0
 
+// this function takes a string and a number, and returns the string repeated that many number of times
+
+function repeatString (string, number) { 
+    return (new Array(number+1)).join(string); 
+}
+
+repeatString("Good morning!", 3); // this will return Good morning!Good morning!Good morning!
+repeatString("hello", 5); // this will return "hellohellohellohellohello"
+repeatString("hello ", 5); // this will return it with spaces "hello hello hello hello hello " 
