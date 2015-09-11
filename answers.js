@@ -111,3 +111,14 @@ function factorialNum (num)
 factorialNum(4); // this will return 24
 factorialNum(-10); // this returns "This number cannot be factorialized"
 
+// return the longest word in a string
+
+function longestWord (str){
+    var replaced = str.replace(/[^A-Za-z\s]/g,"");
+    var last = replaced.split(" ").sort(function(a,b) { // comparing and sorting word lengths for conflicts
+        return b.length - a.length
+    })
+    return last[0];
+    }
+    longestWord("This sentence contains one word longer than others, which may or may not be hippopotamus"); // this will return hippopotamus
+    longestWord("Some of these words are the same length, Alanna"); // this will return length
