@@ -92,3 +92,4 @@ function reverseString(s) {
   return s.split('').reverse().join('');
 }
 reverseString("The quick brown fox"); // this will return "xof nworb kciuq ehT"
+reverseString(""); // returns an empty space ""
