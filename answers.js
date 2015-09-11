@@ -19,6 +19,9 @@ lastCharacter("I am learning about functions"); // this will return "s"
 
 lastCharacter(" "); // this will return an empty string " "
 
-
-
+function whereIsTheNumber (string, number) {
+    return string[number];
+}
+whereIsTheNumber("Hi", 1); // this will return "i"
+whereIsTheNumber("Sunshine", 3); // this will return "s"
 
