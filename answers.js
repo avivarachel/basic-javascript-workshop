@@ -41,4 +41,12 @@ addingTwoNumber (1, 2); /// this returns 3
 addingTwoNumbers (12, 1.5); /// this returns 13.5
 addingTwoNumbers ("pickles", 75); /// this will return "pickles75"
 
+/// function that takes two numbers and multiplies them together
+
+function multiplyingTwoNumbers (num1, num2) {
+  return num1 * num2;   
+}
+multiplyingTwoNumbers(47, 567345); /// this will return 26665215
+multiplyingTwoNumbers(1, 1.5); /// this will return 1.5
+multiplyingTwoNumbers("piglets", 75); /// this will return NaN (not a number)
 
