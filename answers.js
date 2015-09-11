@@ -24,4 +24,4 @@ function whereIsTheNumber (string, number) {
 }
 whereIsTheNumber("Hi", 1); // this will return "i"
 whereIsTheNumber("Sunshine", 3); // this will return "s"
-
+whereIsTheNumber(" ", 0); // this will return a blank space " "
