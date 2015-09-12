@@ -122,3 +122,18 @@ function longestWord (str){
     }
     longestWord("This sentence contains one word longer than others, which may or may not be hippopotamus"); // this will return hippopotamus
     longestWord("Some of these words are the same length, Alanna"); // this will return length
+    
+    // this function will take a phrase, and returns the same phrase with every word capitalized.
+    
+    function capitalizeMe(str)
+{
+    return str.replace(/\w\S*/g, function(txt) { //  RegExp pattern replaced by the return value of second parameter
+        return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase(); // substr is replaced by new substring in new function
+        
+    });
+}
+
+capitalizeMe("hi HeLlO BONJOUR holA"); // will return "Hi Hello Bonjour Hola"
+capitalizeMe("the united states of america"); // will return "The United States Of America"
+capitalizeMe(""); // will return ""
+
