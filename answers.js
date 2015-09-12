@@ -145,3 +145,15 @@ Array.max = function( array ){
 
 Array.max([5, 6]); // this will return 6
 Array.max([6789, 2, 67, 888]); // this will return 6789
+
+// filter out falsey answers
+
+function filterForTruthy(array){
+    var filteredArray = array.filter(function(val) {
+	    return !(val === "" || typeof val == "undefined" || val === null || val === false || val === 0);
+    });
+    return filteredArray;
+}
+
+filterForTruthy([5, 6, 0]); // returns array with 5, 6
+filterForTruthy([6, "ooglet", 45, 0, 34.9, ""]); // returns  6, "ooglet," 45, 34.9
