@@ -137,3 +137,11 @@ capitalizeMe("hi HeLlO BONJOUR holA"); // will return "Hi Hello Bonjour Hola"
 capitalizeMe("the united states of america"); // will return "The United States Of America"
 capitalizeMe(""); // will return ""
 
+// return the largest number in an Array
+
+Array.max = function( array ){
+    return Math.max.apply( Math, array );
+};
+
+Array.max([5, 6]); // this will return 6
+Array.max([6789, 2, 67, 888]); // this will return 6789
