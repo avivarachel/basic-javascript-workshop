@@ -157,3 +157,10 @@ function filterForTruthy(array){
 
 filterForTruthy([5, 6, 0]); // returns array with 5, 6
 filterForTruthy([6, "ooglet", 45, 0, 34.9, ""]); // returns  6, "ooglet," 45, 34.9
+
+
+// return sum of all numbers in an array
+
+var total = [0, 4, 56, 1].reduce(function(a, b) { // the reduce function -- REDUCING the values of the array to the total (a) + the number itself (b)
+  return a + b;
+}); // will return 61
